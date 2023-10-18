@@ -2,11 +2,11 @@
 
 import { CustomButtonProps } from "@/types";
 
-const Button = ({ title, css, handleClick }: CustomButtonProps) => {
+const Button = ({ title, css, type, isDisabled, handleClick }: CustomButtonProps) => {
   return (
     <button
-        disabled={false}
-        type={'button'}
+        disabled={ isDisabled || false }
+        type={ type || 'button' }
         className={`${css} bg-blue-300 rounded-full px-4 py-2`}
         onClick={ handleClick }
     >

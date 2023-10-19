@@ -1,17 +1,21 @@
 "use client";
 
 import { CustomButtonProps } from "@/types";
+import { motion } from 'framer-motion';
 
-const Button = ({ title, css, type, isDisabled, handleClick }: CustomButtonProps) => {
+const Button = ({ title, css, type, isDisabled, handleClick, initial, animate, transition }: CustomButtonProps) => {
   return (
-    <button
+    <motion.button
         disabled={ isDisabled || false }
         type={ type || 'button' }
-        className={`${css} bg-blue-300 rounded-full px-4 py-2`}
+        className={`${css} bg-blue-300 rounded-full px-4 py-2 hover:scale-105`}
         onClick={ handleClick }
+        initial={ initial }
+        animate={ animate }
+        transition={ transition }
     >
       <span>{ title }</span>
-    </button>
+    </motion.button>
   );
 }
 

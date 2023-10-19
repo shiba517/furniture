@@ -6,5 +6,8 @@ export interface CustomButtonProps {
     type?: 'button' | 'submit';
     handleClick?: MouseEventHandler<HTMLButtonElement>;
     isDisabled?: boolean;
+    initial?: object;
+    animate?: object;
+    transition?: object;
 }
 

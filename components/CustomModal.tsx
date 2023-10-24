@@ -1,18 +1,19 @@
 "use client"
 
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 
-interface CustomModalProps {
+interface CustomModalProps extends PropsWithChildren {
   isOpen: boolean;
-  closeModal: () => void;
+  closeModal: () => void;  // function that does not return anything
+  // closeModal: any;
   content?: any;
 }
 
 const CustomModal = (props: CustomModalProps) => {
   return (
-    <>
+    // <>
     <Transition 
     appear show={props.isOpen} 
     as={Fragment}>
@@ -52,7 +53,7 @@ const CustomModal = (props: CustomModalProps) => {
         </div>
       </Dialog>
     </Transition>
-    </>
+    // </>
   );
 }
 

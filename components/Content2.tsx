@@ -9,7 +9,7 @@ const Content2 = () => {
 
     return (
         <div className='h-fit bg-black relative'>
-            <div className='absolute bottom-0 left-0 z-50 p-4 w-2/3 '>
+            <div className='absolute bottom-0 left-0 z-50 p-4 w-2/3'>
                 <motion.p 
                 className='text-6xl font-bold uppercase'
                 initial={{ opacity: 0 }}

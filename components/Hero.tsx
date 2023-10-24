@@ -6,7 +6,6 @@ import CustomModal from './CustomModal';
 import heroImage  from '../public/hero.jpg'
 import { motion } from 'framer-motion';
 
-import { heroHeaderVariant, heroSubTextVariant, heroButtonVariant } from '@app/utils/variants/variants';
 import FramerMotionButton from './FramerMotionButton';
 
 const Hero = () => {
@@ -29,17 +28,6 @@ const Hero = () => {
     const heroHeaderVariant: {} = {
         visible: { scale: 1 },
         animate: { rotate: 360, scale: 1 },
-    }
-
-    const heroButtonVariant: any = {
-        initial: { y: "100%" },
-        animate: { 
-          y: "0%",
-          transition: {
-            duration: 1,
-            delay: 1
-          } 
-        }
     }
 
     const [modalContent, setModalContent] = useState<any>()

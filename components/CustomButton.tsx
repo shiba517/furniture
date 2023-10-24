@@ -8,7 +8,7 @@ const Button = ({ title, css, type, isDisabled, handleClick, initial, animate, t
     <motion.button
         disabled={ isDisabled || false }
         type={ type || 'button' }
-        className={`${css} bg-blue-300 rounded-full px-4 py-2 hover:scale-105`}
+        className={`${css} bg-blue-300 rounded-full px-4 py-2 hover:scale-105 w-fit`}
         onClick={ handleClick }
         initial={ initial }
         animate={ animate }

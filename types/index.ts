@@ -11,3 +11,11 @@ export interface CustomButtonProps {
     transition?: object;
 }
 
+export interface SubHeaderProps {
+    title: string;
+    css?: string;
+    initial?: object;
+    animate?: object;
+    transition?: object;
+}
+
